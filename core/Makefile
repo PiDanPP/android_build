@@ -1124,6 +1124,7 @@ endif
 	$(hide) rm -f $(TARGET_OUT)/recovery-from-boot.p
 	$(hide) cp $(ota_temp_root)/SYSTEM/bin/install-recovery.sh $(TARGET_OUT)/bin/install-recovery.sh
 	$(hide) cp $(ota_temp_root)/SYSTEM/recovery-from-boot.p $(TARGET_OUT)/recovery-from-boot.p
+	$(hide) ./vendor/cm/tools/changelog
 
 $(RECOVERY_RESOURCE_ZIP): $(INSTALLED_RECOVERYIMAGE_TARGET)
 	$(hide) mkdir -p $(dir $@)
